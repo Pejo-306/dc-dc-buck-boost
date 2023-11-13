@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MP8859")(type "KiCad")(uri "/home/pesho/data/Electronics/dc-dc-buck-boost/hardware/libraries/MP8859/2023-11-13_12-33-25.kicad_sym")(options "")(descr ""))
+)
