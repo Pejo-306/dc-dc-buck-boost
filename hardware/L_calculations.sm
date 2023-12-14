@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>c5ecf56e-3568-4005-85a3-7145a941ff2b</id>
+      <revision>4</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="0" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="54" top="90" width="66" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">η</e>
+          <e type="operand">93</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="153" top="90" width="474" height="40" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Tahoma" fontSize="10">
+        <content>
+          <p>БЕЛЕЖКА: избрано от графика "Efficiency vs Output Current" на страница 2<br />при VOUT = 5V и IOUT = 3A</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="126" width="79" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.out</e>
+          <e type="operand">3</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="153" width="93" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.inmin</e>
+          <e type="operand">4</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="180" width="101" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.inmax</e>
+          <e type="operand">22</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="207" width="79" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.out</e>
+          <e type="operand">5</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="234" width="111" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F.REQ</e>
+          <e type="operand">500</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="261" width="112" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.L</e>
+          <e type="operand">I.out</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="288" width="106" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ripple</e>
+          <e type="operand">40</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="324" width="181" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ΔI.L</e>
+          <e type="operand">ripple</e>
+          <e type="operand">I.L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.2</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="360" width="317" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L.minbuck</e>
+          <e type="operand">V.out</e>
+          <e type="operand">V.inmax</e>
+          <e type="operand">V.out</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.inmax</e>
+          <e type="operand">F.REQ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ΔI.L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μH</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6.4394</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="432" width="338" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L.minboost</e>
+          <e type="operand">V.inmin</e>
+          <e type="operand">V.out</e>
+          <e type="operand">V.inmin</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.out</e>
+          <e type="operand">F.REQ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ΔI.L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μH</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.3333</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="513" width="74" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L</e>
+          <e type="operand">10</e>
+          <e type="operand" style="unit">μH</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="144" top="513" width="311" height="40" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Tahoma" fontSize="10">
+        <content>
+          <p>БЕЛЕЖКА: не избирам 6.8 uH за да се съобразя<br />с толеранса на дросела</p>
+        </content>
+      </text>
+    </region>
+    <region left="45" top="567" width="363" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.peakbuck</e>
+          <e type="operand">I.out</e>
+          <e type="operand">V.out</e>
+          <e type="operand">V.inmax</e>
+          <e type="operand">V.out</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">V.inmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F.REQ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3.3864</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="45" top="639" width="428" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.peakboost</e>
+          <e type="operand">V.out</e>
+          <e type="operand">I.out</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">η</e>
+          <e type="operand">V.inmin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">V.inmin</e>
+          <e type="operand">V.out</e>
+          <e type="operand">V.inmin</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">V.out</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F.REQ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.1123</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
