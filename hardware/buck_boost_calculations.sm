@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>30908cd8-daad-4a12-96f1-3fcdf58ca08c</id>
+      <revision>5</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="0" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="54" top="9" width="104" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.SW</e>
+          <e type="operand">500</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="36" width="87" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.max</e>
+          <e type="operand">85</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="63" width="87" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.min</e>
+          <e type="operand">15</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="90" width="110" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T</e>
+          <e type="operand">1</e>
+          <e type="operand">f.SW</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="99" width="124" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.ON_MIN</e>
+          <e type="operand">160</e>
+          <e type="operand" style="unit">ns</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="135" width="44" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">BUCK</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="162" width="266" height="32" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.buck_min</e>
+          <e type="operand">100</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">D.max</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">T</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.3</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="198" width="52" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Boost</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="225" width="221" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.boost_min</e>
+          <e type="operand">T.ON_MIN</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.16</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
